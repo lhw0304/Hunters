@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+    <link rel='stylesheet' href='../stylesheets/startmap.css' />
+    <title>地址与经纬度</title>
+  </head>
+  <body>
+   <div id="container" tabindex="0"></div>
+   <div class ='panel'>
+     <input id = 'input' value = '点击地图显示地址/输入地址显示位置' onfocus = 'this.value=""'></input>
+     <div id = 'message'></div>
+   </div>
+   <form action=""><!--向后台发数据from的经纬度-->
+    <input type="hidden" id="tip" value="">
+    <a href="/callrun"><input type="button" id="goback" value="返回"/></a><!--返回按钮需要写路由-->
+    <script src="../javascripts/jquery-1.11.3.min.js"></script>
+   <script type="text/javascript" src="http://webapi.amap.com/maps?v=1.3&key=f0fe6d06038a892910559bacf7b51ae3"></script>
+   <script src="../javascripts/overmap.js"></script>

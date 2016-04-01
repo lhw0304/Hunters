@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+		<!-- 新 Bootstrap 核心 CSS 文件 -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no,user-scalable=no">
+	<meta content='yes' name='apple-mobile-web-app-capable'> 
+	<meta content='telephone=no' name='format-detection' > 
+	<meta content='black' name='apple-mobile-web-app-status-bar-style'> 
+	<link rel="stylesheet" href="stylesheets/bootstrap.min.css">
+	<title>Document</title>
+	<style>
+		.touxiang {
+			height: 100px;
+			width: 100px;
+		}
+		.navbar{
+			bottom: 0px;
+		}
+	</style>
+</head>
+<body>
+<div class="list-group">
+  <a href="#" class="list-group-item list-group-item-success">
+  	<img src="images/man.png" alt="" class="touxiang">
+  	<strong>id:</strong><span>跑跑啊跑</span>
+  </a>
+  <a href="#" class="list-group-item list-group-item-success">约跑记录</a>
+  <a href="#" class="list-group-item list-group-item-success">设置</a>
+</div>
+
+
+
+<nav class="navbar navbar-default navbar-fixed-bottom">
+	<div class="btn-group btn-group-justified" role="group" aria-label="...">
+	  <div class="btn-group" role="group">
+	    <a href="/joinrun">
+	    	<button type="button" class="btn btn-info">参加约跑</button>
+	    </a>
+	  </div>
+	  <div class="btn-group" role="group">
+	    <a href="/callrun">
+	    	<button type="button" class="btn btn-info">发起约跑</button>
+	    </a>
+	  </div>
+	  <div class="btn-group" role="group">
+	    <a href="/main">
+	    	<button type="button" class="btn btn-info">我的资料</button>
+	    </a>
+	  </div>
+	</div>
+</nav>
+<script src="javascripts/jquery-1.11.3.min.js"></script>
+<script src="javascripts/bootstrap.min.js"></script>
+</body>
+</html>

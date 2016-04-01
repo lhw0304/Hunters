@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="stylesheets/bootstrap.min.css">
+	<style>
+		*{
+			list-style: none;
+		}
+		#container{
+			
+		}
+		.portrait{
+			text-align: center;
+			width: 14%;
+			border: 1px solid #000; 
+			margin-right: 3%;
+		}
+		.jmx-list span{
+			line-height: 120%;
+		}
+		.jmx-list .glyphicon{
+			float: right;
+			margin-right: 5%;
+			margin-top: 5%;
+		}
+		.jmx-list .start,.jmx-list .end{
+			display: inline-block;
+			width: 25%;
+			white-space:nowrap;
+			text-overflow:ellipsis;
+			overflow:hidden
+		}
+		.list-group{
+			margin-bottom: 50px;
+		}
+	</style>
+</head>
+<body>
+
+<ul class="list-group jmx-list">
+	<%runs.forEach(function(run){%>
+  <li class="list-group-item jmx-item">
+  	<a href="#"><img class="portrait" src="images/man.png" alt=""></a><span>位置：</span>
+	<span class="start"><%= run.form %></span>--&nbsp;<span class="end"><%= run.to %></span>
+	<br>
+	<span >时间：<%= run.time %></span>
+	<a href=""><div class="glyphicon glyphicon-map-marker" aria-hidden="true"></div></a>
+  </li>
+  <%})%>
+
+
+</ul>
+<nav class="navbar navbar-default navbar-fixed-bottom">
+	<div class="btn-group btn-group-justified" role="group" aria-label="...">
+	  <div class="btn-group" role="group">
+	    <a href="/joinrun">
+	    	<button type="button" class="btn btn-info">参加约跑</button>
+	    </a>
+	  </div>
+	  <div class="btn-group" role="group">
+	    <a href="/callrun">
+	    	<button type="button" class="btn btn-info">发起约跑</button>
+	    </a>
+	  </div>
+	  <div class="btn-group" role="group">
+	    <a href="/main">
+	    	<button type="button" class="btn btn-info">我的资料</button>
+	    </a>
+	  </div>
+	</div>
+</nav>
+</body>
+<script src="javascripts/jquery-1.11.3.min.js"></script>
+<script src="javascripts/bootstrap.min.js"></script>
+</html>
